@@ -1,0 +1,45 @@
+PS C:\Users\chakr\Desktop\COLLEGE\PROJECTS!\PORTFOLIO\web tech> git init
+Reinitialized existing Git repository in C:/Users/chakr/Desktop/COLLEGE/PROJECTS!/PORTFOLIO/web tech/.git/
+PS C:\Users\chakr\Desktop\COLLEGE\PROJECTS!\PORTFOLIO\web tech> git add . 
+PS C:\Users\chakr\Desktop\COLLEGE\PROJECTS!\PORTFOLIO\web tech> git commit -a -m "adding basic html code 2305"
+[master (root-commit) c9557b5] adding basic html code 2305
+ 2 files changed, 22 insertions(+)
+ create mode 100644 2305.html
+ create mode 100644 index.html.txt
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 641 bytes | 49.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/chakrikaanousha/WEBTECH_CLASS/pull/new/master
+remote:
+To https://github.com/chakrikaanousha/WEBTECH_CLASS.git
+ * [new branch]      master -> master
+PS C:\Users\chakr\Desktop\COLLEGE\PROJECTS!\PORTFOLIO\web tech>
+
+1. install github ex
+2. signin from the side bar through github
+3. local system ---> go to directory --> open an folder
+4. source control logo --> intialize repository
+5. commit and give a message
+
+    
+
+
+5. terminal :
+git init // to intialize na empty repository
+// create a new file 
+commit - local repo(system)-to save on local
+git add. //add all the changes
+git commit -a -m"msg" //a: to commit all files and m: to write a message
+//o/p: commited to master branch - master branch is here the local comp - ka master branch
+push - push these changes to the repository / global branch
+create a remote : a cable to connect local --- global
+ source control logo --> : --> add a remote --> through git --> select file or else the link with __.git extension
+ and give a name to the remote ex. origin
+git push origin master //specifies to __ from
+
+

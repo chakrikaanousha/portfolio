@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightseagreen;    }
+
+    .calculator {
+      width: 200px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background-color: lightslategray;
+    }
+
+    .calculator input {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      font-size: 16px;
+      background-color:lightskyblue;
+    }
+
+    .calculator .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      background-color: lightcoral
+    }
+
+    .calculator .buttons button {
+      padding: 5px;
+      font-size: 16px;
+      background-color: lightgoldenrodyellow;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="calculator">
+
+    <!-- BUTTONS DEFINING:  -->
+    <input type="text" id="result" readonly> 
+    <!-- READONLY - takes input -->
+    <div class="buttons">
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button onclick="appendOperator('+')">+</button>
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button onclick="appendOperator('-')">-</button>
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button onclick="appendOperator('*')">*</button>
+      <button onclick="appendNumber(0)">0</button>
+      <button onclick="clearResult()">C</button>
+      
+      <button onclick="calculateResult()">=</button>
+      <button onclick="appendOperator('/')">/</button>
+    </div>
+  </div>
+
+
+<!-- SCRIPT IN BODY  -->
+  <script>
+    //append number - to get the number when click
+    function appendNumber(number) {
+      var result = document.getElementById('result');
+      result.value += number;
+    }
+    //operator - to get op
+    function appendOperator(operator) {
+      var result = document.getElementById('result');
+      result.value += operator;
+    }
+    //to clear out the inputs(number+operator)
+    function clearResult() {
+      var result = document.getElementById('result');
+      result.value = '';
+    }
+    //to calculate res based on input(number + operator)
+    function calculateResult() {
+      var result = document.getElementById('result');
+      //try catch block for error or syntax erorro
+      try {
+        result.value = eval(result.value);
+      } catch (error) {
+        result.value = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+html file in notepad-- change extension .txt to .html
+!+enter = boiler code will be placed
+alt+ upper/lower key = to move the selected lines of code
+ctrl+k ctrl+s = to acess keyboard shortcuts
+go to settings -- > keyboard shortcuts
+index.html = place from where the server starts
+emmet abrevation tools like !: puts boiler plate comes : useful for dev to develop their pages easily 
+CTRL+/ == comments
+h1 + enter  =  heating tag
+p + enter =  paragraph tag
+
+Attributes:
+a +  enter  =  attribute tag :  takes to the respective link
+<a href="https:codewithharry.com":click here to know more</a>
+can have multiple attributes :
+<a href="https:codewithharry.com":click here to know more</a><a href="https:codewithharry.com" Class='me' Id = 'that'>click here to know more</a>
+
+to check css errors: jigsaw.w3.org/css-validator/validator

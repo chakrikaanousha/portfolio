@@ -1,0 +1,16 @@
+/* external css:
+here p : selector 
+declaration: 
+ color : property
+palevio... : property value */
+p {
+    font-size: 64px;
+    color: palevioletred;
+}
+
+h1{
+    color: brown;
+    font-style: italic;
+    border
+}
+

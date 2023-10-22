@@ -1,0 +1,198 @@
+CSS
+#13
+SELECTOR:
+used to find / select elements to set property such as color, height etc.
+Selector{ property:value; }  //p{color: blue} 
+
+GROUP OF SELECTORS:
+header, footer{
+    background-color: yellowgreen;
+    border radius: 3px;
+}
+
+WAYS TO ADD CSS:
+1. INLINE: added directly using style attribute
+<p style="color: aqua; background-color: black;"> this line is using inline css styling </p>
+2. INTERNAL: css inside 
+<head>
+    <style>
+
+    </style>
+</head>
+3. EXTERNAL: CSS kept in a seperate style sheet
+create  anew file style.css and add link- 
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+#PRECEDENCE OR PREFERENCE GIVEN N CASE OF THREE:
+ THE LAST LINE EXECUTING 
+ TO SPECIFY: ADD  IMPORTANT
+ <style>
+    body{
+        background-color: yellowgreen !important;
+    }
+</style>
+
+
+#15
+TYPES OF BASIC SELECTORS:
+1. CSS ELEMENT SELECTOR:
+p{
+    color: hotpink;
+}
+
+2.ID SELECTOR:
+used to select / change only a certain element's id 
+its unique, can be accesed as unique id only
+<style>
+#idSelector{
+    background-color: brown;
+}
+</style>
+
+3.CLASS SELECTOR:
+used to select multiple elements properties
+it can be accesed by various elements
+<style>
+     .parabasics{
+            background-color: #ee0101;
+            color: blueviolet;
+            border: 20cm;
+        }
+</style>
+
+4. GROUPING SELECTORS:
+
+<style>
+    footer,span{
+            background-color: aqua;
+        }
+</style>
+<body>
+    <div>
+        <p>PARA 5 /: INSIDE DIV TAG - GROUPing selector 
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem vitae cumque impedit ipsum rerum tempora incidunt beatae, tempore nemo placeat laboriosam delectus eum mollitia alias. Nesciunt iusto quisquam eius dolorem. </p>
+    
+            <span>SPAN HERE </span>
+    <footer> this a footer</footer>
+    </div>
+</body>
+
+PRECEDENCE/PREFERENCE:
+if both id and class taken under saem property then it follows id property
+
+idselector: bg = green ; - class selector: bg = yellow;
+=> follows bg = green // ID SELECTOR
+
+COMENTS IN CSS:
+/*this is a comment */
+
+
+#17
+FONTS:
+<head>
+    <style>
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+Font stack:
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+chooses font based on availabiity (in stack form)
+
+WEB SAFE FONT:
+fonts which can be accesed from the web, 
+GOOGLE FONTS - can be imported  
+Go to google fonts
+select a handwritting 
+select the type(bold, itlics etc.)
+click on plus side of the font text
+copy css style sheet link along with accessing link
+
+FONT SIZE:
+<style>
+    p{
+        font size: 10px; // 1/96th of an inch
+    }
+    </style>
+
+BOLD:
+<style>
+    p{
+        font style: italics;
+        font-weight: bold;
+    }
+</style>
+
+
+#18
+COLORS:
+types of color choosing:
+1. COLOR BY NAME:
+<style>
+    #firstpara{
+        color: lightcoral;
+    }
+</style>
+
+2. COLOR BY RGB:
+<style>
+    #secondpara{
+        color: rgb(218, 88, 37);
+    }
+</style>
+
+3. COLOR BY HEX:
+<style>
+    #thirdpara{
+            color: #50ebeb;
+        }
+</style>
+
+#19
+
+BORDER:
+<style>
+/* one line code for border seting */
+border: 4px dotted palevioletred;
+/* Multiple line code */
+border-width: 5px;
+border-color: lightsalmon;
+border-style: dotted;
+/* to curve the borders: border radius */
+border-radius: 20px;
+</style>
+
+BORDER SIDES:
+<style>
+border-top: 4px solid lightcoral;
+/* border-left, right, bottom:; */
+</style>
+
+BORDER RADIUS:
+<style>
+    border-top - left- radius: 20px;
+    /* similarly other radius can also be adjusted */
+</style>
+
+BACKGROND POSIION:
+<style>
+    /* can set a bg img */
+     background-image: url('https://images.unsplash.com/photo-1652641378209-8765ecb1ab5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80');
+     /* to postion the img: */
+     background-position: 192px 34px;
+     /*postion by pixels or else by the postions: centre, left, right  */
+     background-position: center;
+     /* can alos postion by x,y */
+     background-positon: centre top;
+            
+</style>
+
+#20
+BOXMODEL:
+MARGIN, BORDER, PADDING:
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.quora.com%2FWhat-are-the-differences-between-margin-and-padding&psig=AOvVaw00XzEmi02cbTGzVNHO-jQp&ust=1687702814261000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNj8oomN3P8CFQAAAAAdAAAAABAH
+

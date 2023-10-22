@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>    
+</head>
+<body>
+    <form action="backend.html" method = "GET">
+    <h1> FORM </h1>
+    <!-- DIV TO Divide the paragraph -->
+    <div>
+        USERNAME : <input type = "text" name="Username"> <br>
+    </div> <br> <div>
+        PASSWORD: <input type="password" pswd = "mypswd"> <br>
+    </div><br><div>
+        EMAIL: <input type="email" name="myemail" >
+    </div><br><div>
+        <!-- phone number format setting*** -->
+        PHONE NUMBER: <input type="tel" name="myphonenumber"placeholder="0123456789" pattern="[0-9]{10}" >
+    </div><br>
+    <div>
+        GENDER: Male <input type="radio" name="gender" > Female <input type="radio" name="gender" >
+    </div><br><div>
+        DATE: <input type="date" name="date" >
+    </div><br><div>
+        ARE YOU 18+? <input type="checkbox" name="18+" id="">
+    </div><br>
+    <div>
+        ANY SUGGESTIONS/COMMENTS:<BR><textarea name="mySugguestion"cols="50" rows="10"></textarea>        
+    <div><br>
+
+<br>
+<input type = "submit" value = "SUBMIT">
+<input type="reset" value="RESET">
+
+</form>
+</body>
+</html>

@@ -1,0 +1,35 @@
+1. difference between tags and atrributes
+2. diff b/w www and internet
+3. protocols - http(connection oriented-tcp/ip) - rules communication bw systems and networks
+4. def of web 
+?hypetext markup meaning
+5. web server - website - web pages - webtags
+6. web programs - exe in web browser : url ?
+7. web 2.0 ?
+8. web design issues?
+browser and os adaptability
+bandwidth amd cache(local system issue)
+resolution issue
+
+
+9 different boxes- grid concept
+position property
+parent tag concept
+div 30x30
+body -content30x130
+to change one div infront of another 
+with the #x (div id)
+position : absolute
+top:100px 
+div tag hovering
+top margin 
+  
+
+  queries selector all
+  getElements by id
+  get elements by class
+  get elements by query Selector
+  for loop execution on a list by iterating as list as a whole not considered 
+  list: last child //css
+  list first child //css
+  list even and odd child op.
